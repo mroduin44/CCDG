@@ -12,6 +12,9 @@ def draw():
 def update():
     print(Position[0])
     
+def on_mouse_move(pos):
+    Position=pos
+
 def on_mouse_down():
     
 
@@ -23,6 +26,3 @@ def on_mouse_down(button):
 
 def on_mouse_down(pos, button):
     
-
-def on_mouse_move(pos):
-    Position=pos
