@@ -1,0 +1,2 @@
+HEIGHT = 730
+WIDTH = 1366
