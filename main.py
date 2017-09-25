@@ -1,28 +1,16 @@
-HEIGHT = 730
-WIDTH = 1366
-Position=(0,0)
-
 alien = Actor('alien')
-alien.topright = 0, 0 
+
+WIDTH = 500 + alien.width
+HEIGHT = alien.height + 200
+
+alien.pos = WIDTH/2, HEIGHT/2
 
 def draw():
     screen.clear()
+    screen.fill((0,0,128))
     alien.draw()
-
+    
 def update():
-    print(Position[0])
-    
-def on_mouse_move(pos):
-    Position=pos
-
-def on_mouse_down():
-    
-
-def on_mouse_down(pos):
-    
-
-def on_mouse_down(button):
-    
-
-def on_mouse_down(pos, button):
-    
+    alien.left += 2
+    if alien.left > WIDTH:
+        alien.right = 0
